@@ -32,8 +32,8 @@ xcodegen
 
 **Remember to tell git to ignore the xcodeproj files once you ready to use Xcodegen.**
 
-## Summary
-- ✅ Xcodegen simplifies complicated to read xcodeproj files in project configuration YAML files.
+## Summary \
+✅ Xcodegen simplifies complicated to read xcodeproj files in project configuration YAML files.
 ✅ Pull Requests/Merge Request are easier to read and follow
 ✅ Conflicts in the project.yml are easier to resolve
 ✅ Generate projects on demand and remove your .xcodeproj from git, which means **no more merge conflicts!**
