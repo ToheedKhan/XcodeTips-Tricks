@@ -52,16 +52,6 @@ xcodegen
 [ProjectSpec](https://github.com/yonaskolb/XcodeGen/blob/master/Docs/ProjectSpec.md)
 
 
-## References:-
-
-https://medium.com/freelancer-engineering/xcodegen-a-better-way-to-manage-xcode-projects-3359d2a31d86
-
-https://swiftpackageindex.com/yonaskolb/XcodeGen
-
-https://github.com/yonaskolb/XcodeGen
-
-https://betterprogramming.pub/generating-xcodeprojs-with-xcodegen-7d291cfc2f46
-
 ## How to add Swift Packages using Xcodegen
 
 One of the most popular dependencies managers used in iOS development is **Swift Package Manager**.
@@ -90,3 +80,14 @@ xcodegen && open SampleApp.xcodeproj
 settings:
   ENABLE_BITCODE: NO
 ```
+
+
+## References:-
+
+https://medium.com/freelancer-engineering/xcodegen-a-better-way-to-manage-xcode-projects-3359d2a31d86
+
+https://swiftpackageindex.com/yonaskolb/XcodeGen
+
+https://github.com/yonaskolb/XcodeGen
+
+https://betterprogramming.pub/generating-xcodeprojs-with-xcodegen-7d291cfc2f46
