@@ -16,7 +16,7 @@ This attribute tells git that whenever there is a merge conflict with any .pbxpr
 Nine times out of ten this will work fine. However when it dosen’t things go south real quickly.
 Depending on the size of your project you can end up with hundreds of seemingly insolvable conflicts where blocks of code end up where they shouldn’t. If you have ever experienced this you know it can quickly become a nightmare.
 
-#XcodeGen
+# XcodeGen
 
 XcodeGen is a command line tool that generates your Xcode project using your folder structure and a simple project spec.
 
@@ -52,7 +52,7 @@ xcodegen
 [ProjectSpec](https://github.com/yonaskolb/XcodeGen/blob/master/Docs/ProjectSpec.md)
 
 
-References:-
+## References:-
 
 https://medium.com/freelancer-engineering/xcodegen-a-better-way-to-manage-xcode-projects-3359d2a31d86
 
