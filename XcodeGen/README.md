@@ -64,3 +64,23 @@ https://betterprogramming.pub/generating-xcodeprojs-with-xcodegen-7d291cfc2f46
 
 ##How to add Swift Packages using Xcodegen
 
+One of the most popular dependencies managers used in iOS development is **Swift Package Manager**.
+In this section, I will show you how to import a popular open-source library used in iOS development: **Alamofire.**
+Open **project.yml** at the top level after options: section add the following:
+
+```
+packages:
+  Alamofire:
+    url: https://github.com/Alamofire/Alamofire
+    majorVersion: 5.5.0
+```
+Above we added the package at a project level. However, we haven’t linked Alamofire to our SaladMaker app target. Let’s do that next. Under the SaladMaker target add the following:
+
+```
+dependencies:
+  - package: Alamofire
+```
+Next, run xcodegen and then open SampleApp.xcodeproj in Xcode. In terminal run the following commands:
+```
+xcodegen && open SampleApp.xcodeproj
+```

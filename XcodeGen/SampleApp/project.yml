@@ -1,10 +1,18 @@
 name: SampleApp
 options:
   bundleIdPrefix: com.SampleApp
+packages:
+  Alamofire:
+    url: https://github.com/Alamofire/Alamofire
+    majorVersion: 5.5.0
+
 targets:
-  SaladMaker:
+  SampleApp:
     type: application
     platform: iOS
     deploymentTarget: "16.2"
     sources:
       - SampleApp
+    dependencies:
+      - package: Alamofire
+    
