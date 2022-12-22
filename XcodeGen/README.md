@@ -34,20 +34,20 @@ xcodegen
 
 ## Summary 
 ✅ Xcodegen simplifies complicated to read xcodeproj files in project configuration YAML files. \
-✅ Pull Requests/Merge Request are easier to read and follow
-✅ Conflicts in the project.yml are easier to resolve
-✅ Generate projects on demand and remove your .xcodeproj from git, which means **no more merge conflicts!**
-✅ Groups and files in Xcode are always **synced** to your directories on disk
-✅ Easy **configuration** of projects which is human readable and git friendly
-✅ Easily copy and paste **files and directories** without having to edit anything in Xcode
-✅ Share build settings across multiple targets with **build setting groups**
-✅ Automatically generate Schemes for **different environments** like test and production
-✅ Easily **create new projects** with complicated setups on demand without messing around with Xcode
-✅ Generate from anywhere including on **CI**
-✅ Distribute your spec amongst multiple files for easy **sharing** and overriding
-✅ Easily create **multi-platform** frameworks
-✅ Integrate **Carthage** frameworks without any work
-✅ Export **Dependency Diagrams** to view in [Graphviz](https://www.graphviz.org/)
+✅ Pull Requests/Merge Request are easier to read and follow. \
+✅ Conflicts in the project.yml are easier to resolve. \
+✅ Generate projects on demand and remove your .xcodeproj from git, which means **no more merge conflicts!** \
+✅ Groups and files in Xcode are always **synced** to your directories on disk. \
+✅ Easy **configuration** of projects which is human readable and git friendly. \
+✅ Easily copy and paste **files and directories** without having to edit anything in Xcode. \
+✅ Share build settings across multiple targets with **build setting groups**. \
+✅ Automatically generate Schemes for **different environments** like test and production. \
+✅ Easily **create new projects** with complicated setups on demand without messing around with Xcode. \
+✅ Generate from anywhere including on **CI**. \
+✅ Distribute your spec amongst multiple files for easy **sharing** and overriding. \
+✅ Easily create **multi-platform** frameworks. \
+✅ Integrate **Carthage** frameworks without any work. \
+✅ Export **Dependency Diagrams** to view in [Graphviz](https://www.graphviz.org/). \
 
 [ProjectSpec](https://github.com/yonaskolb/XcodeGen/blob/master/Docs/ProjectSpec.md)
 
@@ -62,7 +62,7 @@ https://github.com/yonaskolb/XcodeGen
 
 https://betterprogramming.pub/generating-xcodeprojs-with-xcodegen-7d291cfc2f46
 
-##How to add Swift Packages using Xcodegen
+## How to add Swift Packages using Xcodegen
 
 One of the most popular dependencies managers used in iOS development is **Swift Package Manager**.
 In this section, I will show you how to import a popular open-source library used in iOS development: **Alamofire.**
@@ -85,7 +85,7 @@ Next, run xcodegen and then open SampleApp.xcodeproj in Xcode. In terminal run t
 xcodegen && open SampleApp.xcodeproj
 ```
 
-##How to change build settings
+## How to change build settings
 ```
 settings:
   ENABLE_BITCODE: NO
