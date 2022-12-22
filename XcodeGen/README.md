@@ -1,5 +1,5 @@
 # XcodeGen - A better way to manage Xcode Projects
-##Generating xcodeproj’s with Xcodegen
+## Generating xcodeproj’s with Xcodegen
 Get rid of unreadable xcodeproj files and say hello to readable project configuration files
 
 # **The problem**
@@ -32,8 +32,8 @@ xcodegen
 
 **Remember to tell git to ignore the xcodeproj files once you ready to use Xcodegen.**
 
-##Summary
-✅ Xcodegen simplifies complicated to read xcodeproj files in project configuration YAML files.
+## Summary
+- ✅ Xcodegen simplifies complicated to read xcodeproj files in project configuration YAML files.
 ✅ Pull Requests/Merge Request are easier to read and follow
 ✅ Conflicts in the project.yml are easier to resolve
 ✅ Generate projects on demand and remove your .xcodeproj from git, which means **no more merge conflicts!**
