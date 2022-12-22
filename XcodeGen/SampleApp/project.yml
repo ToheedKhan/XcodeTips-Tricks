@@ -8,6 +8,8 @@ packages:
 
 targets:
   SampleApp:
+    settings:
+      ENABLE_BITCODE: NO
     type: application
     platform: iOS
     deploymentTarget: "16.2"

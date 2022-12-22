@@ -84,3 +84,9 @@ Next, run xcodegen and then open SampleApp.xcodeproj in Xcode. In terminal run t
 ```
 xcodegen && open SampleApp.xcodeproj
 ```
+
+##How to change build settings
+```
+settings:
+  ENABLE_BITCODE: NO
+```
