@@ -1,0 +1,10 @@
+name: SampleApp
+options:
+  bundleIdPrefix: com.SampleApp
+targets:
+  SaladMaker:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.2"
+    sources:
+      - SampleApp
