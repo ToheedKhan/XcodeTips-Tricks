@@ -1,0 +1,55 @@
+---
+name: YourAppName
+options:
+  developmentLanguage: en
+  bundleIdPrefix: com.your_bundleIdPrefix
+settings:
+  base:
+    INFOPLIST_FILE: PROJECT_FOLDER/SupportingFiles/Info.plist
+    MARKETING_VERSION: '1.0.0'
+    SWIFT_VERSION: 5.0
+    ENABLE_TESTABILITY: 'YES'
+    CURRENT_PROJECT_VERSION: 1
+    VERSIONING_SYSTEM: apple-generic
+    CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER: false
+    PRODUCT_NAME: APP_NAME
+    EXCLUDED_ARCHS[sdk=iphonesimulator*]: arm64
+    BUILD_ACTIVE_ARCHITECTURE_ONLY: true
+targets:
+  APP_NAME:
+    type: application
+    platform: iOS
+    deploymentTarget:
+      iOS: 12.0
+    settings:
+      SWIFT_VERSION: 5.0
+      PRODUCT_BUNDLE_IDENTIFIER: com.test.PRODUCT_BUNDLE_IDENTIFIER
+      configs:
+        Debug:
+          OTHER_CFLAGS: "$(inherited) -fembed-bitcode-marker"
+          BITCODE_GENERATION_MODE: marker
+          CLANG_ENABLE_CODE_COVERAGE: true
+        Release:
+          OTHER_CFLAGS: "$(inherited) -fembed-bitcode"
+          BITCODE_GENERATION_MODE: bitcode
+          CLANG_ENABLE_CODE_COVERAGE: false
+    sources:
+    - path: APP_NAME/Sources
+      createIntermediateGroups: true
+    - path: APP_NAME/Resources
+      createIntermediateGroups: true
+      excludes:
+      - assets
+      - Frameworks
+    - path: APP_NAME/Resources/assets
+      type: folder
+      createIntermediateGroups: true
+    info:
+      path: APP_NAME/SupportingFiles/Info.plist
+      properties:
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        UILaunchStoryboardName: LaunchScreen
+        UIMainStoryboardFile: LaunchScreen
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
+        

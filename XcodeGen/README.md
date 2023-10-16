@@ -81,6 +81,10 @@ settings:
   ENABLE_BITCODE: NO
 ```
 
+## Another way to run
+```
+xcodegen generate --spec project.yml
+```
 
 ## References:-
 
