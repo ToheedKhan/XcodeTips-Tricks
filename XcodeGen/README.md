@@ -86,6 +86,25 @@ settings:
 xcodegen generate --spec project.yml
 ```
 
+
+## **Advantages**?
+The advantages of using xcodegen are numerous:
+
+Eliminates git conflicts in project files: Since the project settings are managed through the YAML file, conflicts in project files become a thing of the past.
+Legible project file updates: All edits and updates to the project file are now clear and organized within the YAML file, making it easier to understand and maintain.
+Reusable project templates: You can create templates for your projects and reuse them whenever needed, streamlining project setup and reducing repetitive tasks.
+Efficient for multi-application projects: For multi-application projects sharing the same codebase but with slight variations (e.g., different localizables or icons), xcodegen is a great option. Adding a new application is as simple as using your application template in the YAML and customizing it with specific icons, colors, or localizations.
+Simplifies startup template projects: Creating startup templates for your organization becomes a breeze, even if you don’t use xcodegen. The generated project can be saved in git and easily distributed across teams.
+Seamless integration with package managers: xcodegen offers excellent support for Swift Package Manager and Carthage. Additionally, it’s easy to integrate with other tools like CocoaPods, SwiftLint, and SwiftGen using scripting.
+Overall, xcodegen greatly enhances project management, collaboration, and automation, making it a powerful and efficient tool for iOS developers.
+
+## **Disadvantages**?
+While xcodegen offers several advantages, it’s essential to consider some potential disadvantages:
+
+Its another third-party dependency: xcodegen is an external tool that you need to include in your project. Relying on an external tool means you depend on its maintenance, updates, and compatibility with future Xcode versions.
+Learning curve: Getting started with xcodegen can be a bit challenging, as it requires understanding its YAML configuration and how it interacts with Xcode projects. Developers may need some basic training to use it effectively.
+Documentation challenges: The documentation for xcodegen can be extensive, but it might lack advanced examples, leading to potential roadblocks when facing specific issues. It’s advisable to work on demo projects first before using it extensively in complex projects.
+
 ## References:-
 
 https://medium.com/freelancer-engineering/xcodegen-a-better-way-to-manage-xcode-projects-3359d2a31d86
